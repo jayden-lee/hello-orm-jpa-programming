@@ -1,4 +1,4 @@
-package com.jayden.springdatajpa;
+package com.jayden.tutorial;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
