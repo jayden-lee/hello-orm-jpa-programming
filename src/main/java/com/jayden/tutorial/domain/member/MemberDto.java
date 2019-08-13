@@ -1,4 +1,4 @@
-package com.jayden.tutorial.domain;
+package com.jayden.tutorial.domain.member;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;

@@ -1,5 +1,6 @@
-package com.jayden.tutorial.domain;
+package com.jayden.tutorial.domain.member;
 
+import com.jayden.tutorial.domain.member.infra.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.util.StringUtils;

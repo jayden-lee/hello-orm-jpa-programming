@@ -1,7 +1,7 @@
 package com.jayden.tutorial.controller;
 
-import com.jayden.tutorial.domain.MemberDto;
-import com.jayden.tutorial.domain.MemberService;
+import com.jayden.tutorial.domain.member.MemberDto;
+import com.jayden.tutorial.domain.member.MemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
