@@ -1,8 +1,5 @@
 package com.jayden.tutorial.domain;
 
-import lombok.Builder;
-import lombok.Getter;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,9 +18,10 @@ public class Member {
 
     }
 
-    @Builder
-    public Member(String name) {
-        this.name = name;
+    public static Member of(String name) {
+        Member member = new Member();
+        member.name = name;
+        return member;
     }
 
     public Long getId() {
