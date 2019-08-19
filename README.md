@@ -42,15 +42,34 @@ EntityManager.persist(entity);
 - 트랜잭션이 커밋되면 자동으로 플러시가 발생한다.
 
 ### 직접 호출
+
 ```java
 em.flush()
 ```
 
 ### 트랜잭션 커밋
 플러시 자동으로 호출
+
 ```java
 em.commit
 ```
 
 ### JPQL 쿼리 실행
 플러시 자동 호출
+
+## 엔티티 매핑
+1. 객체와 테이블 매핑 : @Entity, @Table
+2. 필드와 컬럼 매핑 : @Column
+3. 기본 키 매핑 : @Id
+4. 연관관계 매핑 : @ManyToOne, @JoinColumn
+
+## 데이터베이스 스키마 자동 생성
+- create : 기존 테이블 삭제 후 다시 생성
+- create-drop : create와 같으나 종료 시점에 테이블 삭제
+- update : 변경 부분만 반영 (새로운 컬럼을 추가하는 것만 가능)
+- validate : 엔티티와 테이블이 정상 매핑되었는지만 체크
+- none : 사용하지 않음
+ 
+```
+spring.jpa.hibernate.ddl-auto
+```
