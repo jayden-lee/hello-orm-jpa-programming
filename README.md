@@ -58,10 +58,10 @@ em.commit
 플러시 자동 호출
 
 ## 엔티티 매핑
-1. 객체와 테이블 매핑 : @Entity, @Table
-2. 필드와 컬럼 매핑 : @Column
-3. 기본 키 매핑 : @Id
-4. 연관관계 매핑 : @ManyToOne, @JoinColumn
+1. 객체와 테이블 매핑 : <code>@Entity</code>, <code>@Table</code>
+2. 필드와 컬럼 매핑 : <code>@Column</code>
+3. 기본 키 매핑 : <code>@Id</code>
+4. 연관관계 매핑 : <code>@ManyToOne</code>, <code>@JoinColumn</code>
 
 ## 데이터베이스 스키마 자동 생성
 - create : 기존 테이블 삭제 후 다시 생성
@@ -73,3 +73,18 @@ em.commit
 ```
 spring.jpa.hibernate.ddl-auto
 ```
+
+## 필드와 컬럼 매핑 어노테이션
+- <code>@Column</code> : 컬럼 매핑
+- <code>@Temporal</code> : 날짜 타입 매핑 (최신 버전에서는 LocalDate와 LocalDateTime을 사용)
+- <code>@Enumerated</code> : enum 타입 매핑
+- <code>@Lob</code> : BLOB, CLOB 매핑
+- <code>@Transient</code> : 특정 필드 컬럼에 매핑하지 않을 때 사용
+
+## 기본 키 매핑 어노테이션
+- <code>@Id</code>
+- <code>@GeneratedValue</code>
+    - IDENTITY : 데이터베이스에 위임
+    - SEQUENCE : 데이터베이스 시퀀스 오브젝트 사용
+    - TABLE : 키 생성 테이블 사용
+    - AUTO : 방언에 따라 자동 지정 (기본값)
