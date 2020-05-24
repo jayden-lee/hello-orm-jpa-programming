@@ -1,5 +1,4 @@
 # Java ORM JPA Programming Repo
-> 인프런 자바 ORM 표준 JPA 프로그래밍 강좌를 학습하고 정리한 내용입니다
 
 ## JPA
 - Java Persistence API
@@ -25,10 +24,10 @@ EntityManager.persist(entity);
 ```
 
 ## 엔티티 생명주기
-비영속(new/transient) : 영속성 컨텍스트와 전혀 관계가 없는 새로운 상태
-영속(managed) : 영속성 컨텍스트에 관리되는 상태
-준영속(detached) : 영속성 컨텍스트에 저장되어 있다가 분리된 상태
-삭제(removed) : 삭제된 상태
+- 비영속(new/transient) : 영속성 컨텍스트와 전혀 관계가 없는 새로운 상태
+- 영속(managed) : 영속성 컨텍스트에 관리되는 상태
+- 준영속(detached) : 영속성 컨텍스트에 저장되어 있다가 분리된 상태
+- 삭제(removed) : 삭제된 상태
 
 ## 영속성 컨텍스트 이점
 1. 1차 캐시
