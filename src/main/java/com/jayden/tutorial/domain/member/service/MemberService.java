@@ -1,6 +1,8 @@
-package com.jayden.tutorial.domain.member;
+package com.jayden.tutorial.domain.member.service;
 
-import com.jayden.tutorial.domain.member.infra.MemberRepository;
+import com.jayden.tutorial.domain.member.MemberDto;
+import com.jayden.tutorial.domain.member.entity.Member;
+import com.jayden.tutorial.domain.member.entity.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.util.StringUtils;

@@ -13,9 +13,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-public class SecurityConfig {
+public class SwaggerConfig {
 
-    private static final String BASE_PACKAGE = "com.jayden.tutorial.controller";
+    private static final String BASE_PACKAGE = "com.jayden.tutorial.domain";
     private static final String PATH = "/api/**";
     private static final String TITLE = "Spring Data JPA Study API";
 
